@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi Table</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+    <title>Multiplication Table</title>
     <link rel="stylesheet" href="multi.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <div id="head">
+      <input type="text" id="num" />
+      <button onclick="multiply()">Click here</button>
+    </div>
     <div id="display">
-      <input type="text" id="result" disabled>
       <button onclick="appendToResult('1')">1</button>
       <button onclick="appendToResult('2')">2</button>
       <button onclick="appendToResult('3')">3</button>
@@ -19,8 +22,91 @@
       <button onclick="appendToResult('8')">8</button>
       <button onclick="appendToResult('9')">9</button>
       <button onclick="appendToResult('0')">0</button>
-      <button onclick="calculateResult()">Calc</button>
-    </div>  
-    <script src="script.js"></script>
-</body>
+      <button onclick="clearResult('C')">C</button>
+    </div>
+    <div class="around">
+      <div class="table">
+        <table>
+          <tr>
+            <th>NUM</th>
+            <th>X</th>
+            <th>NUM</th>
+            <th>=</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">1</td>
+            <td>=</td>
+            <td id="result1"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">2</td>
+            <td>=</td>
+            <td id="result2"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">3</td>
+            <td>=</td>
+            <td id="result3"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">4</td>
+            <td>=</td>
+            <td id="result4"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">5</td>
+            <td>=</td>
+            <td id="result5"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">6</td>
+            <td>=</td>
+            <td id="result6"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">7</td>
+            <td>=</td>
+            <td id="result7"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">8</td>
+            <td>=</td>
+            <td id="result8"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">9</td>
+            <td>=</td>
+            <td id="result9"></td>
+          </tr>
+          <tr>
+            <td class="numero"></td>
+            <td>X</td>
+            <td class="nim">10</td>
+            <td>=</td>
+            <td id="result10"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="multi.js"></script>
+  </body>
 </html>
